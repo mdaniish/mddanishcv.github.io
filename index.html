@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Danish</title>
+    <link rel="icon" href="https://tse2.mm.bing.net/th?id=OIP.1yoSL-WO0YU5mQKROudvswHaHa&pid=Api&P=0&h=180">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .photo{
+            /* height: 86vb; */
+        }
+
+        body>div>img {
+            width: 70vw;
+            filter: opacity(5);
+            filter: saturate(0);
+            /* filter: brightness(3.3); */
+            filter: drop-shadow(5);
+            position: relative;
+            /* box-shadow: black 7px 37px 50px; */
+        }
+
+        .name {
+            position: absolute;
+            top: 25vb;
+            right: 17vw;
+            font-size: 2vw;
+            /* text-shadow: 2px 2px 3px solid black; */
+            align-items: center;
+            color: gray;
+
+        }
+
+        .name>h1 {
+            text-shadow: black 2px 2px 3px ;
+        }
+
+        .intro {
+            position: absolute;
+            left: 70vw;
+            top: 40vb;
+            font-size: 1.4vw;
+        }
+
+        .in_anim {
+            color: rgb(155, 83, 83);
+            font-size: 2.7vw;
+        }
+
+        .btn {
+            width: 9vw;
+            height: 4vb;
+            margin-top: 3vb;
+            margin-bottom: 3vb;
+            background-color: rgb(87, 92, 161);
+            color: white;
+            border-radius: 50px;
+            transition: 0.25s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: rgb(87, 92, 161);
+        }
+
+        .navbar {
+            position: fixed;
+            font-size: 1.6vw;
+            /* position: absolute; */
+            top: 10vb;
+            right: 3vw;
+            color: black;
+        }
+
+        .li {
+            margin: 8vb 0;
+            color: rgb(185, 71, 211);
+            text-align: center;
+            align-items: center;
+        }
+
+        
+        .nav{
+            top: 4vb;
+            color: rgb(255, 255, 255);
+            text-shadow: black 3px 3px 5px;
+        }
+
+        .sec2 {
+            background-color: whitesmoke;
+            height: fit-content;
+            padding: 3.3vw 0;
+        }
+
+        .png{
+            position: relative;
+            left: 6vw;
+            height: 6vb;
+            margin-right:  16vw;
+        }
+
+        .line {
+            position: relative;
+            width: 90vw;
+            height: 4px;
+            background-color: rgb(115, 76, 76);
+            left: 5vw;
+        }
+        .lines{
+            display: flex;
+        }
+        .line2{
+            position: relative;
+            height: 100px;
+            width: 5px;
+            left: 6vw;
+            margin-right:  19.5vw;
+            background-color: rgb(115, 76, 76) ;
+        }
+        .langName{
+            display: flex;
+        }
+        .topic{
+            position: relative;
+            left: 2vw;
+            margin-right:  8.2vw;
+        }
+
+        footer{
+            color:white ;
+            height: fit-content;
+            padding:2vb 0 ;
+            background-color: cornflowerblue;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .footer{
+            text-align:center ;
+            display: flex;
+        }
+        .link {
+            top: 4vb;
+            color: rgb(255, 255, 255);
+            margin: 0 1vw;
+            font-size: 30px;
+        }
+        .img2{
+            text-shadow: black 10px 10px 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .bgtitle{
+            position: absolute;
+            top: 12.5vb;
+            text-align: center;
+            font-size: 13vw;
+            font-weight: 700;
+            color: rgb(239, 239, 239);
+        }
+
+
+        @media screen and (max-width:500px) {
+
+             .name {
+            top: 5vb;
+
+        }
+
+        .name>h1 {
+            text-shadow: black 2px 2px 3px ;
+        }
+
+        .intro {
+            top: 8vb;
+            font-size: 2.4vw;
+        }
+
+        .in_anim {
+            color: rgb(155, 83, 83);
+            font-size: 3vw;
+        }
+
+        .btn {
+            margin-top: 2vb;
+            font-size: 1vw;
+        }
+        .bgtitle{
+            top: 7vb;
+        }
+        .navbar {
+            top: 0.3vb;
+        }
+        .li {
+            margin: 1vb 0;
+            
+        }
+
+        .sec2 {
+            background-color: whitesmoke;
+            height: fit-content;
+        }
+
+        .png{
+            height: 3vb;
+            margin-right:  9vw;
+        }
+
+        .line {
+            position: relative;
+            width: 90vw;
+            height: 4px;
+            background-color: rgb(185, 71, 211);
+            left: 5vw;
+        }
+        .lines{
+            display: flex;
+        }
+        .line2{
+            height: 0.0px;
+            margin-right:  1vw;
+        }
+        .langName{
+            display: inline;
+        }
+        .topic{
+            margin: 2vb 0;
+        }
+        }
+
+        @media screen and (max-width:619px) {
+            .topic{
+                margin-right:  2vw;
+            }
+        }
+
+        
+        .about{
+            height: fit-content;
+            background-color: rgb(239, 239, 239);
+            color: rgb(58, 58, 58);
+        }
+        .container{
+
+            display: flex;
+        }
+        .abme{
+            height: fit-content;
+            width: 33%;
+            margin-left: 20px;
+            background-color: rgb(239, 239, 239);
+            transform: 2s;
+        }
+        .abme>h1 {
+            margin-bottom: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="photo">
+        <!-- <img src="WhatsApp Image 2024-01-06 at 07.30.24_4f23de3a.jpg" alt=""> -->
+        <img class="img2" src="[removal.ai]_daf9f0c7-da1d-422a-95f5-344d3bcd638c-whatsapp-image-2024-01-06-at-07-30-24_4f23de3a.png" alt="png">
+    </div>
+
+    <pre class="bgtitle">
+Front-End
+& Back-End
+    </pre>
+
+    <div class="name">
+        <h1>Hi, this is <span style="color: brown;">Md. Danish</span></h1>
+    </div>
+    <div class="intro">
+        <h1>and I'm </h1>
+        <span id="element" class="in_anim"></span> <br>
+
+        <button class="btn"> <a href="cv.html" style="text-decoration: none; color: black;">My Resume  <i class="fa-solid fa-file-arrow-down"></i></a></button>
+    </div>
+
+    <!-- <div class="navbar">
+
+        <div class="li">
+            <a href="#" class="nav"><i class="fa-solid fa-house-chimney"></i></a>
+        </div>
+
+        <div class="li">
+            <a href="#" class="nav"><i class="fa-solid fa-user"></i></a> <br>
+        </div>
+
+        <div class="li">
+            <a href="#" class="nav"><i class="fa-solid fa-cart-flatbed-suitcase"></i></a> <br>
+        </div>
+
+        <div class="li">
+            <a href="footer" class="nav"><i class="fa-solid fa-envelope-circle-check"></i></a>
+        </div>
+
+    </div> -->
+<!-- About me -->
+    <div class="about">  
+
+        <div class="container">
+            <div class="abme">
+                <h1>Intro</h1>
+                <h3><pre>
+ Hi, this is Md Danish,
+ I am a Web Developer , fully passionate
+ to coding and problem solving.
+     
+ my other hobbies are Sketching✏, FilmMaking📸.
+                </pre></h3>
+            </div>
+            <div class="abme">
+                <h1>Education</h1>
+                <ul>
+                    <li>2025</li>
+                    <h3><pre>
+     Diploma in Computer Science & Engineering
+     G.P. Latehar
+                    </pre></h3><li>2022</li>
+                    <h3><pre>
+     10th
+     Sarvodaya Vidya Bharti, Hussainabad
+                    </pre></h3>
+                </ul>
+            </div>
+            <div class="abme">
+                
+                <h1>Certification</h1>
+                <li>Full Stack Web Development</li>
+                <h3><pre>
+     Kalam Academy, Ranchi
+                </pre></h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class="sec2">
+
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" alt="html" class="png">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="" class="png">
+        <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="" class="png">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="" class="png">
+        <img src="https://static-00.iconduck.com/assets.00/database-mysql-icon-462x512-6itsq0zm.png" alt="" class="png">
+        <div class="line"></div>
+        <div class="lines">
+            
+            <div class="line2"></div>
+            <div class="line2"></div>
+            <div class="line2"></div>
+            <div class="line2"></div>
+            <div class="line2"></div>
+        </div>
+
+        <div class="langName">
+            <div class="topic">
+            <h3>HTML</h3>
+            HTML, fundamentals of html I use to give structure to my Webpages.
+        </div>
+        <div class="topic">
+            <h3>CSS</h3>
+            CSS, my favorite decorative component , and most loveable stylesheet.
+        </div>
+        <div class="topic">
+            <h3>JavaScript</h3>
+            JavaScript, I use JavaScript as a Front-End and also with Back-End.
+            sometime i use Bootstrap.
+        </div>
+        <div class="topic">
+            <h3>PHP</h3>
+            in Back-End only , and when I want to connect with Database
+        </div>
+        <div class="topic">
+            <h3>MySQL</h3>
+            MySQL, the first Database i learnet.
+        </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footer">
+
+            <div class="fli">
+                <a href="https://www.linkedin.com/in/md-danish-162906278/?lipi=urn%3Ali%3Apage%3Aprofile_common_profile_index%3Ba174159d-8cb6-4967-bd89-0dbe166393aa" class="link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+    
+            <div class="fli">
+                <a href="https://www.facebook.com/profile.php?id=100023005813936" class="link"><i class="fa-brands fa-facebook"></i></a> <br>
+            </div>
+    
+            <div class="fli">
+                <a href="https://www.instagram.com/mdaniish/" class="link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+    
+        </div>
+
+        <div class="copywr">
+            copywrite <i class="fa-regular fa-copyright"></i> mdanish.portfilio
+        </div>
+
+        <div class="service">
+            <ul>
+                <li>Address</li>
+                <pre>
+Japla C.F. , Hussainabad,
+Palamu, Jharkhand,
+822117
+                </pre>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['a Web Developer.', ' a Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
